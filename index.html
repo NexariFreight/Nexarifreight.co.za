@@ -4,159 +4,188 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nexari Freight | Logistics & Transport</title>
+<title>Nexari Freight | Premium Logistics & Transport Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 body {
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#0a1f44;
-    color:white;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0b1220;
+    color: #fff;
+    line-height: 1.5;
 }
 
 /* HEADER */
 header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 30px;
-    background:white;
-    color:black;
-    position:sticky;
-    top:0;
-    z-index:1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    position: sticky;
+    top: 0;
+    background: rgba(11,18,32,0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
-header img { width:140px; }
+header img { width: 130px; }
 
 nav a {
-    margin-left:20px;
-    text-decoration:none;
-    color:black;
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-/* HERO VIDEO */
+/* HERO */
 .hero {
-    position:relative;
-    height:100vh;
-    overflow:hidden;
-}
-
-.hero video {
-    position:absolute;
-    top:50%;
-    left:50%;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transform:translate(-50%, -50%);
-}
-
-/* overlay */
-.overlay {
-    position:absolute;
-    width:100%;
-    height:100%;
-    background:rgba(10,31,68,0.65);
-}
-
-/* content */
-.hero-content {
-    position:absolute;
-    top:30%;
-    left:10%;
-    z-index:2;
+    height: 85vh;
+    background: linear-gradient(rgba(5,10,25,0.85), rgba(5,10,25,0.9)),
+                url('https://images.unsplash.com/photo-1601582585289-cb7fbdc3a1c0');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
 }
 
 .hero h1 {
-    font-size:45px;
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.hero p {
+    font-size: 16px;
+    opacity: 0.85;
+    margin-bottom: 15px;
 }
 
 .btn {
-    padding:12px 25px;
-    background:#f58220;
-    color:white;
-    text-decoration:none;
-    display:inline-block;
-    margin-top:15px;
-    border-radius:5px;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #f58220, #ff9f45);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-/* SECTION */
+/* SECTION (FIXED SPACING) */
 section {
-    padding:60px 20px;
-    max-width:1100px;
-    margin:auto;
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-/* DEPOT IMAGE */
-.depot-img {
-    width:100%;
-    border-radius:10px;
-    margin-top:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.4);
-    transition:0.4s;
+h2 {
+    margin-bottom: 10px;
 }
 
-.depot-img:hover {
-    transform:scale(1.02);
+p {
+    margin: 8px 0;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.stats h2 {
+    color: #f58220;
+    margin-bottom: 5px;
+}
+
+/* SERVICES */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 15px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 /* TRACKING */
 .tracking {
-    background:#081a38;
-    border-left:4px solid #f58220;
-    padding:20px;
+    background: rgba(255,255,255,0.05);
+    padding: 18px;
+    border-left: 3px solid #f58220;
+    border-radius: 6px;
 }
 
 /* FORM */
 form {
-    display:flex;
-    flex-direction:column;
-    gap:12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 input, textarea {
-    padding:12px;
-    border:none;
-    border-radius:5px;
-}
-
-button {
-    background:#f58220;
-    color:white;
-    padding:12px;
-    border:none;
-    cursor:pointer;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
 }
 
 /* REVIEWS */
 .reviews {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 15px;
 }
 
 .review {
-    background:white;
-    color:black;
-    padding:20px;
-    border-radius:10px;
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
 }
 
 /* MAP */
 .map iframe {
-    width:100%;
-    height:300px;
-    border:none;
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
 }
 
 /* FOOTER */
 footer {
-    text-align:center;
-    padding:20px;
-    background:black;
+    text-align: center;
+    padding: 15px;
+    background: #050a19;
+    font-size: 14px;
 }
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: #25D366;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
 </style>
 </head>
 
@@ -166,27 +195,20 @@ footer {
     <img src="logo.png">
     <nav>
         <a href="#">Home</a>
+        <a href="#services">Services</a>
         <a href="#quote">Quote</a>
         <a href="#reviews">Reviews</a>
         <a href="#map">Location</a>
     </nav>
 </header>
 
-<!-- HERO VIDEO -->
+<!-- HERO -->
 <section class="hero">
-
-    <video autoplay muted loop playsinline poster="depot.png">
-        <source src="truck.png.mp4" type="video/mp4">
-    </video>
-
-    <div class="overlay"></div>
-
-    <div class="hero-content">
-        <h1>Keeping Your Business Moving</h1>
-        <p>Reliable Freight & Logistics Across South Africa</p>
+    <div>
+        <h1>Premium Freight & Logistics</h1>
+        <p>Delivering Excellence Across South Africa Since 2014</p>
         <a href="#quote" class="btn">Request Quote</a>
     </div>
-
 </section>
 
 <!-- ABOUT -->
@@ -198,14 +220,31 @@ footer {
     </p>
 </section>
 
-<!-- DEPOT IMAGE SECTION -->
-<section>
-    <h2>Our Depot</h2>
-    <p>
-        Our operational base in Durban supports efficient loading, dispatch, and logistics coordination.
-    </p>
+<!-- STATS -->
+<section class="stats">
+    <div>
+        <h2>10+</h2>
+        <p>Years Experience</p>
+    </div>
+    <div>
+        <h2>500+</h2>
+        <p>Deliveries</p>
+    </div>
+    <div>
+        <h2>100%</h2>
+        <p>Client Satisfaction</p>
+    </div>
+</section>
 
-    <img src="depot.png" class="depot-img">
+<!-- SERVICES -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">Freight Transport</div>
+        <div class="card">Cargo Handling</div>
+        <div class="card">Logistics Planning</div>
+        <div class="card">Distribution</div>
+    </div>
 </section>
 
 <!-- TRACKING -->
@@ -231,7 +270,7 @@ footer {
         <input type="hidden" name="_subject" value="New Quote Request">
         <input type="hidden" name="_captcha" value="false">
 
-        <button>Submit Request</button>
+        <button class="btn">Submit Request</button>
     </form>
 </section>
 
@@ -242,33 +281,28 @@ footer {
 <div class="reviews">
 
 <div class="review">
-⭐⭐⭐⭐⭐<br><br>
-"Everything arrived safely and on time. Very reliable service."
-<br><br>— Yugandren N
+⭐⭐⭐⭐⭐<br>
+"Everything arrived safely and on time. Very reliable service."<br>— Sibusiso N
 </div>
 
 <div class="review">
-⭐⭐⭐⭐⭐<br><br>
-"Professional and easy to work with. Highly recommended."
-<br><br>— Zenzele M
+⭐⭐⭐⭐⭐<br>
+"Professional and easy to work with. Highly recommended."<br>— Thando M
 </div>
 
 <div class="review">
-⭐⭐⭐⭐⭐<br><br>
-"Smooth logistics process and great communication."
-<br><br>— Kabelo R
+⭐⭐⭐⭐⭐<br>
+"Smooth logistics process and great communication."<br>— Kabelo R
 </div>
 
 <div class="review">
-⭐⭐⭐⭐⭐<br><br>
-"Dependable service and well-maintained trucks."
-<br><br>— Priya S
+⭐⭐⭐⭐⭐<br>
+"Dependable service and well-maintained trucks."<br>— Priya S
 </div>
 
 <div class="review">
-⭐⭐☆☆☆<br><br>
-"The delivery went well and everything arrived safely. The only concern was a late return fee applied when we were about 30 minutes late. Understandable policy, just felt a bit strict. Overall still reliable."
-<br><br>— Client Feedback
+⭐⭐☆☆☆<br>
+"The delivery went well and everything arrived safely. The only concern was a late return fee applied when we were about 30 minutes late. Understandable policy, just felt a bit strict. Overall still reliable."<br>— Client Feedback
 </div>
 
 </div>
@@ -285,6 +319,8 @@ footer {
 <footer>
 © 2014 Nexari Freight
 </footer>
+
+<a href="https://wa.me/27311002771" class="whatsapp">💬</a>
 
 </body>
 </html>
