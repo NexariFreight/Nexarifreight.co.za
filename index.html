@@ -4,188 +4,149 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nexari Freight | Premium Logistics & Transport Solutions</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Nexari Freight | Premium Logistics Solutions</title>
 
 <style>
-
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #0b1220;
-    color: #fff;
-    line-height: 1.5;
+    margin:0;
+    font-family: 'Segoe UI', Arial;
+    background:#0a1f44;
+    color:white;
 }
 
 /* HEADER */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 40px;
-    position: sticky;
-    top: 0;
-    background: rgba(11,18,32,0.85);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background:white;
+    color:black;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-header img { width: 130px; }
+header img { width:140px; }
 
 nav a {
-    margin-left: 20px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
+    margin-left:20px;
+    text-decoration:none;
+    color:black;
+    font-weight:500;
 }
 
 /* HERO */
 .hero {
-    height: 85vh;
-    background: linear-gradient(rgba(5,10,25,0.85), rgba(5,10,25,0.9)),
-                url('https://images.unsplash.com/photo-1601582585289-cb7fbdc3a1c0');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 20px;
+    position:relative;
+    height:100vh;
+    background:
+        linear-gradient(rgba(10,31,68,0.75), rgba(10,31,68,0.9)),
+        url('depot.png');
+    background-size:cover;
+    background-position:center;
+    overflow:hidden;
 }
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 8px;
+.hero-content {
+    position:absolute;
+    top:30%;
+    left:10%;
 }
 
-.hero p {
-    font-size: 16px;
-    opacity: 0.85;
-    margin-bottom: 15px;
-}
+.hero h1 { font-size:45px; }
 
 .btn {
-    padding: 12px 25px;
-    background: linear-gradient(45deg, #f58220, #ff9f45);
-    color: white;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
+    padding:12px 25px;
+    background:#f58220;
+    color:white;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:15px;
+    border-radius:5px;
 }
 
-/* SECTION (FIXED SPACING) */
+/* TRUCK */
+.truck {
+    position:absolute;
+    bottom:40px;
+    left:-400px;
+    width:420px;
+    animation:drive 18s linear infinite;
+}
+
+.truck img {
+    width:100%;
+    filter:drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+}
+
+@keyframes drive {
+    0% { left:-400px; }
+    100% { left:120%; }
+}
+
+/* SECTIONS */
 section {
-    padding: 50px 20px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-h2 {
-    margin-bottom: 10px;
-}
-
-p {
-    margin: 8px 0;
-}
-
-/* STATS */
-.stats {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 30px 0;
-}
-
-.stats h2 {
-    color: #f58220;
-    margin-bottom: 5px;
-}
-
-/* SERVICES */
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-    gap: 15px;
-}
-
-.card {
-    background: rgba(255,255,255,0.05);
-    padding: 20px;
-    border-radius: 10px;
-    backdrop-filter: blur(6px);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
+    padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
 }
 
 /* TRACKING */
 .tracking {
-    background: rgba(255,255,255,0.05);
-    padding: 18px;
-    border-left: 3px solid #f58220;
-    border-radius: 6px;
+    background:#081a38;
+    border-left:4px solid #f58220;
+    padding:20px;
 }
 
 /* FORM */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
 }
 
 input, textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+}
+
+button {
+    background:#f58220;
+    color:white;
+    padding:12px;
+    border:none;
+    cursor:pointer;
 }
 
 /* REVIEWS */
 .reviews {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-    gap: 15px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
 .review {
-    background: white;
-    color: black;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 14px;
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:10px;
 }
 
 /* MAP */
 .map iframe {
-    width: 100%;
-    height: 250px;
-    border-radius: 8px;
+    width:100%;
+    height:300px;
+    border:none;
 }
 
 /* FOOTER */
 footer {
-    text-align: center;
-    padding: 15px;
-    background: #050a19;
-    font-size: 14px;
+    text-align:center;
+    padding:20px;
+    background:black;
 }
-
-/* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    background: #25D366;
-    padding: 12px;
-    border-radius: 50%;
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-}
-
 </style>
 </head>
 
@@ -195,7 +156,6 @@ footer {
     <img src="logo.png">
     <nav>
         <a href="#">Home</a>
-        <a href="#services">Services</a>
         <a href="#quote">Quote</a>
         <a href="#reviews">Reviews</a>
         <a href="#map">Location</a>
@@ -204,10 +164,14 @@ footer {
 
 <!-- HERO -->
 <section class="hero">
-    <div>
-        <h1>Premium Freight & Logistics</h1>
-        <p>Delivering Excellence Across South Africa Since 2014</p>
+    <div class="hero-content">
+        <h1>Keeping Your Business Moving</h1>
+        <p>Reliable Freight & Logistics Across South Africa</p>
         <a href="#quote" class="btn">Request Quote</a>
+    </div>
+
+    <div class="truck">
+        <img src="truck.png.mp4">
     </div>
 </section>
 
@@ -216,44 +180,17 @@ footer {
     <h2>About Nexari Freight</h2>
     <p>
         Nexari Freight is a Durban-based logistics company delivering dependable freight and cargo solutions since 2014.
-        Trusted for reliability, professionalism, and efficiency across South Africa.
+        Operating from Jacobs Industrial Area, we are trusted for reliability, professionalism, and efficiency across South Africa.
     </p>
 </section>
 
-<!-- STATS -->
-<section class="stats">
-    <div>
-        <h2>10+</h2>
-        <p>Years Experience</p>
-    </div>
-    <div>
-        <h2>500+</h2>
-        <p>Deliveries</p>
-    </div>
-    <div>
-        <h2>100%</h2>
-        <p>Client Satisfaction</p>
-    </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="card">Freight Transport</div>
-        <div class="card">Cargo Handling</div>
-        <div class="card">Logistics Planning</div>
-        <div class="card">Distribution</div>
-    </div>
-</section>
-
-<!-- TRACKING -->
+<!-- LIVE TRACK STYLE -->
 <section>
     <h2>Shipment Status</h2>
     <div class="tracking">
         <p><strong>Status:</strong> In Transit</p>
-        <p><strong>Route:</strong> Durban → Johannesburg</p>
-        <p><strong>ETA:</strong> 24 Hours</p>
+        <p><strong>Route:</strong> Local → Interprovincial </p>
+        <p><strong>Estimated Delivery:</strong> 24 Hours</p>
     </div>
 </section>
 
@@ -267,10 +204,10 @@ footer {
         <input type="text" name="phone" placeholder="Phone Number">
         <textarea name="message" placeholder="Describe your cargo..." required></textarea>
 
-        <input type="hidden" name="_subject" value="New Quote Request">
+        <input type="hidden" name="_subject" value="New Nexari Freight Quote">
         <input type="hidden" name="_captcha" value="false">
 
-        <button class="btn">Submit Request</button>
+        <button>Submit Request</button>
     </form>
 </section>
 
@@ -281,28 +218,33 @@ footer {
 <div class="reviews">
 
 <div class="review">
-⭐⭐⭐⭐⭐<br>
-"Everything arrived safely and on time. Very reliable service."<br>— Sibusiso N
+⭐⭐⭐⭐⭐<br><br>
+"Everything arrived safely and exactly on time. Nexari Freight is dependable and professional."
+<br><br>— Yugandren N
+<div>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br><br>
+"Great service, excellent communication and reliable drivers. Highly recommended."
+<br><br>— Thando M
 </div>
 
 <div class="review">
-⭐⭐⭐⭐⭐<br>
-"Professional and easy to work with. Highly recommended."<br>— Thando M
+⭐⭐⭐⭐⭐<br><br>
+"Smooth logistics experience from start to finish."
+<br><br>— Kabelo R
 </div>
 
 <div class="review">
-⭐⭐⭐⭐⭐<br>
-"Smooth logistics process and great communication."<br>— Kabelo R
+⭐⭐⭐⭐⭐<br><br>
+"Very professional operation. You can trust them with important deliveries."
+<br><br>— Priya S
 </div>
 
 <div class="review">
-⭐⭐⭐⭐⭐<br>
-"Dependable service and well-maintained trucks."<br>— Priya S
-</div>
-
-<div class="review">
-⭐⭐☆☆☆<br>
-"The delivery went well and everything arrived safely. The only concern was a late return fee applied when we were about 30 minutes late. Understandable policy, just felt a bit strict. Overall still reliable."<br>— Client Feedback
+⭐⭐☆☆☆<br><br>
+"The delivery itself went well and everything arrived safely, which we appreciated. Our only concern was a late return fee applied when we were about 30 minutes over time. While we understand policies are important, it felt a bit strict in that situation. Overall, still a reliable service."
+<br><br>— Client Feedback
 </div>
 
 </div>
@@ -311,16 +253,15 @@ footer {
 <!-- MAP -->
 <section id="map">
 <h2>Our Location</h2>
+
 <div class="map">
 <iframe src="https://maps.google.com/maps?q=Durban&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
 </div>
 </section>
 
 <footer>
-© 2014 Nexari Freight
+© 2014 Nexari Freight | All Rights Reserved
 </footer>
-
-<a href="https://wa.me/27311002771" class="whatsapp">💬</a>
 
 </body>
 </html>
