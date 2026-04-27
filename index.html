@@ -4,160 +4,148 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nexari Freight | Logistics & Transport Solutions Durban</title>
-<meta name="description" content="Nexari Freight provides reliable freight transport, cargo handling and logistics services across South Africa. Based in Durban since 2014.">
+<title>Nexari Freight | Premium Logistics Solutions</title>
 
 <style>
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f4f6f8;
-    color: #333;
-    scroll-behavior: smooth;
+    margin:0;
+    font-family: 'Segoe UI', Arial;
+    background:#0a1f44;
+    color:white;
 }
 
 /* HEADER */
 header {
-    background: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 3px solid #f58220;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background:white;
+    color:black;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-header img {
-    max-width: 150px;
-}
+header img { width:140px; }
 
 nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
+    margin-left:20px;
+    text-decoration:none;
+    color:black;
+    font-weight:500;
 }
 
 /* HERO */
 .hero {
-    position: relative;
-    height: 100vh;
-    background: linear-gradient(rgba(10,31,68,0.85), rgba(10,31,68,0.85)),
-                url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    overflow: hidden;
+    position:relative;
+    height:100vh;
+    background:
+        linear-gradient(rgba(10,31,68,0.75), rgba(10,31,68,0.9)),
+        url('depot.png');
+    background-size:cover;
+    background-position:center;
+    overflow:hidden;
 }
 
 .hero-content {
-    position: relative;
-    top: 30%;
-    transform: translateY(-30%);
-    animation: fadeIn 2s ease;
+    position:absolute;
+    top:30%;
+    left:10%;
 }
 
-.hero h1 {
-    font-size: 42px;
-}
+.hero h1 { font-size:45px; }
 
-.hero p {
-    font-size: 18px;
-}
-
-/* BUTTON */
 .btn {
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #f58220;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    padding:12px 25px;
+    background:#f58220;
+    color:white;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:15px;
+    border-radius:5px;
 }
 
 /* TRUCK */
 .truck {
-    position: absolute;
-    bottom: 20px;
-    left: -250px;
-    width: 220px;
-    animation: drive 14s linear infinite;
+    position:absolute;
+    bottom:40px;
+    left:-400px;
+    width:420px;
+    animation:drive 18s linear infinite;
 }
 
-/* LOGO ON TRUCK */
-.truck-logo {
-    position: absolute;
-    width: 70px;
-    top: 45%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+.truck img {
+    width:100%;
+    filter:drop-shadow(0 10px 20px rgba(0,0,0,0.5));
 }
 
-/* ANIMATIONS */
 @keyframes drive {
-    0% { left: -250px; }
-    100% { left: 110%; }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+    0% { left:-400px; }
+    100% { left:120%; }
 }
 
 /* SECTIONS */
 section {
-    padding: 60px 20px;
-    max-width: 1100px;
-    margin: auto;
+    padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
 }
 
-/* SERVICES */
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+/* TRACKING */
+.tracking {
+    background:#081a38;
+    border-left:4px solid #f58220;
+    padding:20px;
 }
 
-.service-box {
-    background: white;
-    padding: 20px;
-    border-left: 4px solid #f58220;
-    transition: 0.3s;
+/* FORM */
+form {
+    display:flex;
+    flex-direction:column;
+    gap:12px;
 }
 
-.service-box:hover {
-    transform: translateY(-5px);
+input, textarea {
+    padding:12px;
+    border:none;
+    border-radius:5px;
 }
 
-/* CONTACT */
-.contact {
-    background: white;
-    padding: 20px;
-    border-left: 4px solid #0a1f44;
+button {
+    background:#f58220;
+    color:white;
+    padding:12px;
+    border:none;
+    cursor:pointer;
+}
+
+/* REVIEWS */
+.reviews {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.review {
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:10px;
+}
+
+/* MAP */
+.map iframe {
+    width:100%;
+    height:300px;
+    border:none;
 }
 
 /* FOOTER */
 footer {
-    background: #0a1f44;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-/* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 18px;
+    text-align:center;
+    padding:20px;
+    background:black;
 }
 </style>
 </head>
@@ -165,61 +153,115 @@ footer {
 <body>
 
 <header>
-    <img src="logo.png" alt="Nexari Freight">
+    <img src="logo.png">
     <nav>
         <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="#quote">Quote</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#map">Location</a>
     </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
     <div class="hero-content">
-        <h1>Reliable Logistics & Freight Solutions</h1>
-        <p>Fast. Secure. Nationwide Delivery Since 2014</p>
-        <a href="https://wa.me/27311002771" class="btn">Request Quote</a>
+        <h1>Keeping Your Business Moving</h1>
+        <p>Reliable Freight & Logistics Across South Africa</p>
+        <a href="#quote" class="btn">Request Quote</a>
     </div>
 
-    <!-- Truck with logo -->
     <div class="truck">
-        <img src="https://cdn-icons-png.flaticon.com/512/1995/1995470.png" width="220">
-        <img src="logo.png" class="truck-logo">
+        <img src="truck.png">
     </div>
 </section>
 
+<!-- ABOUT -->
 <section>
-    <h2>About Us</h2>
+    <h2>About Nexari Freight</h2>
     <p>
         Nexari Freight is a Durban-based logistics company delivering dependable freight and cargo solutions since 2014.
         Operating from Jacobs Industrial Area, we are trusted for reliability, professionalism, and efficiency across South Africa.
     </p>
 </section>
 
-<section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="service-box">Freight Transportation</div>
-        <div class="service-box">Cargo Handling & Delivery</div>
-        <div class="service-box">Logistics Solutions</div>
-        <div class="service-box">Regional Distribution</div>
+<!-- LIVE TRACK STYLE -->
+<section>
+    <h2>Shipment Status</h2>
+    <div class="tracking">
+        <p><strong>Status:</strong> In Transit</p>
+        <p><strong>Route:</strong> Durban → Johannesburg</p>
+        <p><strong>Estimated Delivery:</strong> 24 Hours</p>
     </div>
 </section>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact">
-        <p><strong>Email:</strong> info@nexarifreight.co.za</p>
-        <p><strong>Phone:</strong> 031 100 2771</p>
-        <p><strong>Location:</strong> Durban, South Africa</p>
-        <p><a href="https://wa.me/27311002771">Chat on WhatsApp</a></p>
-    </div>
+<!-- QUOTE -->
+<section id="quote">
+    <h2>Request a Quote</h2>
+
+    <form action="https://formsubmit.co/info@nexarifreight.co.za" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="text" name="phone" placeholder="Phone Number">
+        <textarea name="message" placeholder="Describe your cargo..." required></textarea>
+
+        <input type="hidden" name="_subject" value="New Nexari Freight Quote">
+        <input type="hidden" name="_captcha" value="false">
+
+        <button>Submit Request</button>
+    </form>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+<h2>Client Reviews</h2>
+
+<div class="reviews">
+
+<div class="review">
+⭐⭐⭐⭐⭐<br><br>
+"Everything arrived safely and exactly on time. Nexari Freight is dependable and professional."
+<br><br>— Sibusiso N
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br><br>
+"Great service, excellent communication and reliable drivers. Highly recommended."
+<br><br>— Thando M
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br><br>
+"Smooth logistics experience from start to finish."
+<br><br>— Kabelo R
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br><br>
+"Very professional operation. You can trust them with important deliveries."
+<br><br>— Priya S
+</div>
+
+<div class="review">
+⭐⭐☆☆☆<br><br>
+"The delivery itself went well and everything arrived safely, which we appreciated. Our only concern was a late return fee applied when we were about 30 minutes over time. While we understand policies are important, it felt a bit strict in that situation. Overall, still a reliable service."
+<br><br>— Client Feedback
+</div>
+
+</div>
+</section>
+
+<!-- MAP -->
+<section id="map">
+<h2>Our Location</h2>
+
+<div class="map">
+<iframe src="https://maps.google.com/maps?q=Durban&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
 </section>
 
 <footer>
-    © 2026 Nexari Freight. All Rights Reserved.
+© 2026 Nexari Freight | All Rights Reserved
 </footer>
-
-<a class="whatsapp" href="https://wa.me/27311002771">💬</a>
 
 </body>
 </html>
