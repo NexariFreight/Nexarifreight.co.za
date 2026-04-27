@@ -1,124 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Nexari Freight</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f6f8;
-      color: #333;
-    }
-    header {
-      background-color: #0a1f44;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    header img {
-      max-width: 120px;
-      display: block;
-      margin: 0 auto 10px;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    h1, h2 {
-      color: #0a1f44;
-    .card {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    ul {
-      padding-left: 20px;
-    }
+<title>Nexari Freight | Logistics Company Durban</title>
 
-    .contact p {
-      margin: 5px 0;
-    }
+<meta name="description" content="Nexari Freight is a Durban-based logistics company offering reliable freight transport, cargo handling, and distribution services since 2014.">
 
-    .whatsapp {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 12px 20px;
-      background-color: #25D366;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
 
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #0a1f44;
-      color: white;
-      margin-top: 20px;
-    }
-  </style>
+/* HEADER */
+header {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+header img {
+    max-width: 180px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f58220;
+}
+
+/* HERO */
+.hero {
+    background: #2f343a;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* SECTION */
+.container {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #2f343a;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+/* CONTACT BOX */
+.contact {
+    background: white;
+    padding: 20px;
+    border-left: 4px solid #f58220;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2f343a;
+    color: white;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <!-- 🔹 ADD YOUR LOGO FILE NAME HERE -->
-    <img src="logo.png" alt="Nexari Freight Logo">
-    <h1>Nexari Freight</h1>
-    <p>Reliable Logistics & Freight Solutions Since 2014</p>
-  </header>
+<header>
+    <img src="logo.png" alt="Nexari Freight">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-  <div class="container">
+<section class="hero">
+    <h1>Reliable Logistics & Freight Solutions</h1>
+    <p>Serving South Africa Since 2014</p>
+</section>
 
-    <div class="card">
-      <h2>About Us</h2>
-      <p>
-        Nexari Freight is a Durban-based logistics company established in 2014, delivering dependable and efficient freight and cargo transportation solutions. 
-        Operating from the Jacobs Industrial Area, we have built a reputation for reliability, professionalism, and timely delivery across a wide range of logistics needs.
-      </p>
+<div class="container">
+    <h2>About Us</h2>
+    <p>
+        Nexari Freight is a Durban-based logistics company established in 2014,
+        delivering dependable and efficient freight and cargo transportation solutions.
+        Operating from the Jacobs Industrial Area, we have built a reputation for reliability,
+        professionalism, and timely delivery.
+    </p>
 
-      <p>
-        Our team is committed to ensuring that every shipment is handled with precision and care. Whether managing local distribution or larger cargo movements, 
-        we provide tailored logistics solutions designed to meet the evolving demands of modern businesses.
-      </p>
+    <p>
+        Our team ensures every shipment is handled with precision and care,
+        offering tailored logistics solutions for businesses of all sizes.
+    </p>
+</div>
 
-      <p>
-        At Nexari Freight, we understand that logistics is the backbone of business operations. That’s why we prioritize efficiency, communication, and customer satisfaction in every delivery.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Our Services</h2>
-      <ul>
+<div class="container" id="services">
+    <h2>Our Services</h2>
+    <ul>
         <li>Freight Transportation</li>
         <li>Cargo Handling & Delivery</li>
         <li>Logistics Solutions</li>
         <li>Local & Regional Distribution</li>
-      </ul>
+    </ul>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="contact">
+        <p><strong>Email:</strong> info@nexarifreight.co.za</p>
+        <p><strong>Phone:</strong> 031 100 2771</p>
+        <p><strong>Location:</strong> Jacobs Industrial Area, Durban, South Africa</p>
+        <p><a href="#">Chat with us on WhatsApp</a></p>
     </div>
+</div>
 
-    <div class="card contact">
-      <h2>Contact Us</h2>
-      <p><strong>Email:</strong> info@nexarifreight.co.za</p>
-      <p><strong>Phone:</strong> 031 100 2771</p>
-      <p><strong>Location:</strong> Jacobs Industrial Area, Durban, South Africa</p>
-
-      <!-- 🔹 WhatsApp Button -->
-      <a class="whatsapp" href="https://wa.me/27311002771" target="_blank">
-        Chat with us on WhatsApp
-      </a>
-    </div>
-
-  </div>
-
-  <footer>
-    <p>© 2026 Nexari Freight. All Rights Reserved.</p>
-  </footer>
+<footer>
+    © 2014 Nexari Freight. All Rights Reserved.
+</footer>
 
 </body>
 </html>
